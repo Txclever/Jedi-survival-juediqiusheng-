@@ -1,0 +1,22 @@
+.triagnle(@_,@width,@color){
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid solid solid solid;;
+}
+.triagnle(Top,@width,@color){
+  border-width: @width;
+  border-color: @color transparent transparent transparent;
+}
+.triagnle(Left,@width,@color){
+  border-width: @width;
+  border-color: transparent @color transparent transparent;
+}
+.triagnle(Bottom,@width,@color){
+  border-width: @width;
+  border-color: transparent transparent @color transparent;
+}
+.triagnle(Right,@width,@color){
+  border-width: @width;
+  border-color: transparent transparent transparent @color;
+}
